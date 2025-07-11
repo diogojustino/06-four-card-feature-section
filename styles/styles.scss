@@ -172,6 +172,10 @@ body{
 
 
 @media (min-width: 768px){
+    .body{
+        padding-top: 80px;
+    }
+
     .cards-wrap{
         grid-template-areas: 
         "supervisor supervisor"
@@ -189,10 +193,13 @@ body{
 }
 
 @media (min-width: 1440px){
+      .body{
+        padding-top: 102px;
+    }
     .cards-wrap{
         grid-template-areas: 
-        "supervisor team karma"
-        "supervisor calculator karma";
+        "supervisor team calculator"
+        "supervisor karma calculator";
         
     }
 
