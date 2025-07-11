@@ -105,7 +105,8 @@ body{
 .text{
     @include text-preset-4;
     color: $color-grey-500;
-    margin-bottom: 60px;
+    max-width: 540px;
+    margin: 0 auto 60px;
 }
 
 .cards-wrap{
@@ -172,7 +173,7 @@ body{
 
 
 @media (min-width: 768px){
-    .body{
+    body{
         padding-top: 80px;
     }
 
@@ -193,7 +194,7 @@ body{
 }
 
 @media (min-width: 1440px){
-      .body{
+      body{
         padding-top: 102px;
     }
     .cards-wrap{
