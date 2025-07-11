@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 56px 29px;
+  background-color: #f4f4f4;
+}
+
+.main {
+  max-width: 1114px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-title {
+  color: #4D4F62;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.main-title span:first-child {
+  font-family: "poppins", serif;
+  font-size: 1.5rem;
+  line-height: 135%;
+  letter-spacing: 0rem;
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  .main-title span:first-child {
+    font-size: 2.25rem;
+  }
+}
+
+.main-title span:last-child {
+  font-family: "poppins", serif;
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0.015625rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .main-title span:last-child {
+    font-size: 2.25rem;
+  }
+}
+
+.text {
+  font-family: "poppins", serif;
+  font-size: 0.9375rem;
+  line-height: 140%;
+  letter-spacing: 0rem;
+  font-weight: 400;
+  color: #4D4F62;
+  margin-bottom: 60px;
+}
+
+.cards-wrap {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "supervisor " "team " "karma" "calculator";
+  gap: 32px;
+  justify-items: center;
+}
+
+.card {
+  width: 314px;
+  border-radius: 8px;
+  border-top: 4px solid black;
+  padding: 32px;
+  text-align: start;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-family: "poppins", serif;
+  font-size: 1.25rem;
+  line-height: 135%;
+  letter-spacing: 0rem;
+  font-weight: 600;
+  color: #4D4F62;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-family: "poppins", serif;
+  font-size: 0.8125rem;
+  line-height: 160%;
+  letter-spacing: 0rem;
+  font-weight: 400;
+  color: #6A7178;
+  margin-bottom: 32px;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+}
+
+#supervisor {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: supervisor;
+}
+
+#supervisor .card {
+  border-color: #44D3D2;
+}
+
+#team {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: team;
+}
+
+#team .card {
+  border-color: #EA5454;
+}
+
+#karma {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: karma;
+}
+
+#karma .card {
+  border-color: #FCAE4A;
+}
+
+#calculator {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: calculator;
+}
+
+#calculator .card {
+  border-color: #549EF2;
+}
+
+@media (min-width: 768px) {
+  .cards-wrap {
+        grid-template-areas: "supervisor supervisor" "team karma" "calculator calculator";
+  }
+  #team {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  #karma {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-wrap {
+        grid-template-areas: "supervisor team karma" "supervisor calculator karma";
+  }
+  .card {
+    width: 350px;
+  }
+  #team {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #supervisor {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #karma {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
