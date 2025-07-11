@@ -193,7 +193,7 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  #karma {
+  #calculator {
     -ms-grid-column-align: start;
         justify-self: start;
     -ms-flex-item-align: center;
